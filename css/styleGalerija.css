@@ -1,0 +1,13 @@
+#slike{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img{
+    border: 3px solid brown;
+    padding: 4px;
+    margin: 5px;
+}
+
