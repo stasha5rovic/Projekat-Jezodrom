@@ -8,12 +8,12 @@
     <link rel="icon" href="img/hedgehog.png">
     <link rel="stylesheet" href="css/styleIndex.css">
     <link rel="stylesheet" href="css/styleAll.css">
+    <script src="https://kit.fontawesome.com/f06fde25a9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="sticky_menu">
         <ul>
             <li><a href="#">Glavna stranica</a></li>
-            <li><a href="ishrana.html">Ishrana</a></li>
             <li><a href="zdravlje.html">Higijena i zdravlje</a></li>
             <li><a href="galerija.html">Galerija</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
@@ -22,9 +22,37 @@
     <header>
         <h1>Dobro došli na Ježodrom!</h1>
     </header>
-
-    <h3>Ovo su neke vrste ježeva:</h3>
-    <table>
+    <div id="main_div">
+        
+            <h3>O ježevima</h3>
+            <p>
+                Ježevi (na latinskom <i>Erinaceinae</i>) su sitni sisari koji postoje već 15 miliona godina. 
+                Karakterišu ih leđa prekrivena bodljama, koje, za razliku od bodljikavog praseta, ne mogu da izbace. 
+                Ove bodlje su zapravo napravljene od iste materije kao i ljudska kosa i nokti i predstavljaju
+                jedinu zaštitu ježa od grabljivaca. Kada se oseća ugroženo, jež će svojim jakim mišićima
+                napraviti odbrambenu lopticu, a bodlje će se nakostrešiti i odbiti svaki napad. Međutim, 
+                kada se naviknu na ljude, vrlo rado će opustiti bodlje i dozvoliti da ih mazite. 
+            </p>
+            <p>
+                Ove životinjice imaju odličan njuh i sluh, ali su i veoma plašljive. Aktivne su noću, kada mogu da pređu i do 5 kilometara 
+                u potrazi za hranom. U prirodi, ježevi su lovci-sakupljači, što ih čini savršenim zaštitnicima naših bašta.
+                Omiljena hrana su im puževi, insekti, mali gušteri, gliste... Ali i pečurke, jabuke i šumske bobice. Tokom dana, jež će najradije spavati 
+                u svojoj jazbini, najčešće rupi koju je iskopao u zemlji i obložio lišćem - ako želite da znate
+                koliko su ježevi vezani za svoj dom, pročitajte <a target="blank" href="https://kreativnicentar.rs/p/knjiga/jezeva-kucica/">Ježevu kućicu!</a> &#128516;
+            </p>
+            <p>
+                Neke od interesantnih činjenica o ježevima:
+                <ul id="lista">
+                    <li><i class="fa-solid fa-check"></i> Baš kao i oposumi, ježevi su imuni na neke komponente zmisjkog otrova!</li>
+                    <li><i class="fa-solid fa-check"></i> Kao i medvedi, ježevi u prirodi zimi hiberniraju; ako primetite ježeve u bašti u jesen, ostavite im malo hrane za mačke ili pse, da bi se lakše pripremili za zimu.</li>
+                    <li><i class="fa-solid fa-check"></i> Ježevi ne izazivaju alergije, tako da su savršeni kućni ljubimci za ljude alergične na dlaku pasa ili mačaka.</li>
+                </ul>
+            </p>
+        
+        
+    
+    <h3>Ovo su neke od 15 vrsta ježeva:</h3>
+    <table id="myTable">
         <thead>
             <th>-----</th>
             <th>Evropski jež</th>
@@ -48,20 +76,25 @@
             </tr>
             <tr>
                 <td><b>Slika</b></td>
-                <td><img src="img/European-Hedgehog.jpg" alt="Evropski" width="200px" height="150"></td>
-                <td><img src="img/AfricanHedgehog.png" alt="Africki" width="200px" height="150"></td>
-                <td><img src="img/LongearedHedgehog.jpg" alt="Dugouhi" width="200px" height="150"></td>      
-            
+                <td><img src="img/European-Hedgehog.jpg" alt="Evropski" width="200px" height="150" id="slika1" onclick="uvecaj()"></td>
+                <td><img src="img/AfricanHedgehog.png" alt="Africki" width="200px" height="150" id="slika2" onclick="uvecaj()""></td>
+                <td><img src="img/LongearedHedgehog.jpg" alt="Dugouhi" width="200px" height="150" id="slika3" onclick="uvecaj()"></td>      
+            </tr>
+            <tr>
+                <td colspan="4"><i>Kliknite na sliku ježića da biste je uveličali, ili na dugme da je ponovo smanjite!</i></td>
             </tr>
         </tbody>
-        <tfoot>
-
-        </tfoot>
-    </table>
-
-
+        </table>
+        <button onclick="smanji()">Smanji prvu</button>
+        <button onclick="smanji()">Smanji drugu</button>
+        <button onclick="smanji()">Smanji treću</button>
+    </div>
+<script src="scripts/script1.js"></script>
 </body>
 </html>
+
+
+
 
 
 
