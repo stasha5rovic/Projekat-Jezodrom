@@ -21,10 +21,10 @@
 
     <div id="glavniDiv">
         <div id="divForma">
-        <form>
+        <form id="forma">
             <div>
                 <label for="name">Ime:</label>
-                <input type="text" name="name">
+                <input type="text" name="name" id="ime">
             </div>
             <div>
                 <label for="email">Imejl:</label>
@@ -36,7 +36,7 @@
                 <textarea name="comment" cols="30" rows="10"></textarea>
             </div>
             <br>
-        <button>Pošalji</button>
+        <button id="posalji">Pošalji</button>
         </form>
     </div>
         <div id="divSlika">
@@ -46,6 +46,13 @@
         </div>
     </div>
     
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/script2.js"></script>
+
 </body>
 
 <footer id="futer">
