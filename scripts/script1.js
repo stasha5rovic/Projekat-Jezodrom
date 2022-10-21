@@ -1,16 +1,14 @@
 
-var slika1 = document.getElementById("slika1");
-var slika2 = document.getElementById("slika2");
-var slika3 = document.getElementById("slika3");
+var slika = document.getElementById("mapa");
 
 function uvecaj() {
-    slika1.style.transform = "scale(2)";
-    slika1.style.transition = "transform 0.2s"
+    slika.style.transform = "scale(2)";
+    slika.style.transition = "transform 0.2s easy"
 }
 
 function smanji(){
-    slika1.style.transform = "scale(1)";
-    slika1.style.transition = "transform 0.2s"
+    slika.style.transform = "scale(1)";
+    slika.style.transition = "transform 0.2s easy"
 }
 
 

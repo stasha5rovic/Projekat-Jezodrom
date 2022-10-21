@@ -33,3 +33,23 @@ body{
 h1{
     text-align: center;
 }
+
+#futer{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: bisque;
+}
+
+#ikonica{
+    margin-top: 15px;
+    border: 2px solid brown;
+}
+
+footer p{
+    font-size: 1em;
+    color: brown;
+    margin-top: 30px;
+    margin-left: 15px;
+}

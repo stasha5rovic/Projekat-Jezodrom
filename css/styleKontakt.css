@@ -4,7 +4,30 @@ form{
     padding: 1em;
 }
 
-form div{
-    padding: 1em 0em;
+div input{
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
+
+#glavniDiv{
+    display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#divForma{
+    padding: 1em 0em;
+    display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#postar{
+    margin-bottom: 30px;
+    border: 4px solid brown;
+}
+
+
 
